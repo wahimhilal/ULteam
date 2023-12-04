@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Aclonica;
+  src: url(./fonts/Aclonica-Regular.ttf);
+}
+
+@font-face {
+  font-family: Underdog;
+  src: url(./fonts/Underdog-Regular.ttf);
+}
+
+@font-face {
+  font-family: Sofia;
+  src: url(./fonts/Sofia-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  background: url(./images/background2.jpg) fixed no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Sofia, Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18575e;
+  padding: 10px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-family: Aclonica, sans-serif;
+}
+
+img {
+  width: 50px;
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+img:hover {
+  transform: scale(1.5);
+  transition-timing-function: ease-in-out;
+}
+
+#avatar {
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+section {
+  flex: 0 0 25%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px white;
+  background-color: #dabf98;
+  padding: 2%;
+}
+
+.logo {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Underdog, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #18575e;
+}
+
+form {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #18575e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #12202e;
+}
+
+footer {
+  background-color: #18575e;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    top: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;   
+  }
+  img {
+    margin-top: 10px;
+  }
+  .logo {
+    top: 10px;
+  }
+  main {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 80%;
+  }
+}

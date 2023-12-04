@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mon CV</title>
+</head>
+
+<body>
+    <header>
+        <h1>Wahim Hilal Ghoufle</h1>
+        <figure>
+            <img src="./images/wahim.png" alt="photo d'avatar" id="avatar" />
+        </figure>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mon expérience</h2>
+            <hr />
+            <h3>Titre 1</h3>
+            <h4>Entreprise</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+            <h3>Titre 2</h3>
+            <h4>Entreprise</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+            <h3>Titre 3</h3>
+            <h4>Entreprise</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+        </section>
+        <section>
+            <h2>Mes compétences</h2>
+            <hr />
+            <ul>
+                <li>Méthode Agile Scrum</li>
+                <li>Miro, Figma & Trello</li>
+                <li>VSCode, HTML5 & CSS3</li>
+                <li>Bootstrap</li>
+                <li>Algorithme & JS</li>
+                <li>WordPress</li>
+                <li>VirtualBox</li>
+                <li>Ubuntu</li>
+                <li>MySQL, SQL, phpMyAdmin & PHP</li>
+                <li>GIT & <a href="https://github.com/wahimhilal?tab=repositories" target="_blank">GitHub</a></li>
+            </ul>
+            <p class="logo">
+                <img src="./images/logo-scrum.png" alt="logo Scrum" />
+                <img src="./images/logo-miro.png" alt="logo Miro" />
+                <img src="./images/logo-figma.png" alt="logo Figma" />
+                <img src="./images/logo-trello.png" alt="logo Trello" />
+                <img src="./images/logo-vscode.png" alt="logo VSCode" />
+                <img src="./images/logo-html5.png" alt="logo html5" />
+                <img src="./images/logo-css.png" alt="logo CSS3" />
+                <img src="./images/logo-bootstrap.png" alt="logo Bootstrap" />
+                <img src="./images/logo-algobox.png" alt="logo AlgoBox" />
+                <img src="./images/logo-js.png" alt="logo JS" />
+                <img src="./images/logo-wordpress.png" alt="logo WordPress" />
+                <img src="./images/logo-virtualbox.png" alt="logo VirtualBox" />
+                <img src="./images/logo-ubuntu.png" alt="logo Ubuntu" />
+                <img src="./images/logo-mysql.png" alt="logo MySQL" />
+                <img src="./images/logo-sql.png" alt="logo SQL" />
+                <img src="./images/logo-phpmyadmin.png" alt="logo PhpMyAdmin" />
+                <img src="./images/logo-php.png" alt="logo PHP" />
+                <img src="./images/logo-git.png" alt="logo Git" />
+                <img src="./images/logo-github.png" alt="logo GitHub" />
+            </p>
+        </section>
+        <section>
+            <h2>Ma formation</h2>
+            <hr />
+            <h3>Titre 1</h3>
+            <h4>École</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+            <h3>Titre 2</h3>
+            <h4>École</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+            <h3>Titre 3</h3>
+            <h4>École</h4>
+            <h5>De 2000 à 2000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue nisi eget purus eleifend tempor.
+                Donec posuere in est eget posuere.</p>
+        </section>
+        <section>
+            <h2>Mon niveau en langues</h2>
+            <hr />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Langue</th>
+                        <th>Niveau</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Français</td>
+                        <td>C2 - maîtrise</td>
+                    </tr>
+                    <tr>
+                        <td>Anglais</td>
+                        <td>B1 - seuil</td>
+                    </tr>
+                    <tr>
+                        <td>Arabe</td>
+                        <td>A1 - découverte</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Une suggestion ?</h2>
+            <hr />
+            <form id="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contactez-moi : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+    </footer>
+
+    <script>
+        // Fonction pour gérer la soumission du formulaire
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Obtenir les valeurs du formulaire
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Valider les saisies du formulaire (vous pouvez ajouter davantage de validations si nécessaire)
+            if (!name || !email || !message) {
+                alert('Veuillez remplir tous les champs du formulaire.');
+                return;
+            }
+
+            // Réinitialiser le formulaire après soumission
+            document.getElementById('contact-form').reset();
+
+            // Afficher le message de confirmation
+            alert('Votre message a été envoyé avec succès !');
+        }
+
+        // Ajouter un écouteur d'événement pour la soumission du formulaire
+        document.getElementById('contact-form').addEventListener('submit', handleSubmit);
+    </script>
+
+
+</body>
+
+</html>
